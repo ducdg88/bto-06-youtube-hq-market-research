@@ -128,11 +128,25 @@ Cần kiểm trước khi build tiếp: phỏng vấn 5 chủ studio để xác 
 
 Bản đầu chỉ làm một việc cho tròn: chủ studio mở app là thấy 10 kênh hôm nay thế nào, và thấy ngay kênh nào bất thường. Spec 7 mục đầy đủ nằm trong repo sản phẩm (Private): `spec.md`.
 
-### Flow chính
+### Các flow chính
 
-![Flow chính: từ kết nối kênh tới thưởng đội](images/flow-chinh.png)
+**Flow 1. Luồng hằng ngày: số liệu tự về bảng**
+
+![Flow 1: từ kết nối kênh tới thưởng đội](images/flow-chinh.png)
 
 Nhánh lỗi quan trọng nhất là token hết hạn: kênh đó chuyển sang "mất kết nối" ngay trên bảng, không hiện số cũ như số mới.
+
+**Flow 2. Kết nối kênh mới**
+
+![Flow 2: kết nối kênh mới bằng đăng nhập Google riêng](images/flow-ket-noi-kenh.png)
+
+Admin mở link kết nối trong hồ sơ Chrome riêng của từng kênh, để các tài khoản Google không đăng nhập chung một trình duyệt. Chọn nhầm tài khoản không có kênh hoặc huỷ quyền thì không lưu gì.
+
+**Flow 3. Duyệt thưởng cuối tháng**
+
+![Flow 3: duyệt thưởng theo mốc view](images/flow-duyet-thuong.png)
+
+Thưởng chỉ thành tiền sau khi admin duyệt; thành viên thấy thưởng của mình nhưng không thấy doanh thu kênh.
 
 ### User story chính
 

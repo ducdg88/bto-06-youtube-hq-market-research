@@ -1,3 +1,5 @@
+**🇻🇳 Tiếng Việt** · [🇬🇧 English](README.en.md)
+
 # BTO-06: Hồ sơ thị trường YOUTUBE HQ
 
 Hoàng Văn Đức · Build to Own, Cohort 01 · 27/09/2026
